@@ -13,6 +13,6 @@ COPY ./src /var/www
 
 # bashに入力して実行していたことをここに書いても実行できる
 RUN bundle config --local set path 'vendor/bundle' \
-    && bundle install
+  && bundle install
 
 CMD [ "bundle", "exec", "ruby", "app.rb" ]
