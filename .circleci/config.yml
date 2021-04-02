@@ -9,6 +9,7 @@ jobs:
     working_directory: ~/docker_try/rails/src
     steps:
       - checkout:
+          path: ~/docker_try/rails
       - ruby/install-deps
 
   test:
@@ -27,6 +28,7 @@ jobs:
     working_directory: ~/docker_try/rails/src
     steps:
       - checkout:
+          path: ~/docker_try/rails
       - ruby/install-deps
       - run:
           name: Database setup
