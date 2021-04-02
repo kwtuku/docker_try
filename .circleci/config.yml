@@ -8,8 +8,7 @@ jobs:
       - image: circleci/ruby:2.7
     working_directory: ~/docker_try/rails/src
     steps:
-      - checkout:
-          path: ~/docker_try/rails
+      - checkout
       - ruby/install-deps
 
   test:
@@ -27,8 +26,7 @@ jobs:
       RAILS_ENV: test
     working_directory: ~/docker_try/rails/src
     steps:
-      - checkout:
-          path: ~/docker_try/rails
+      - checkout
       - ruby/install-deps
       - run:
           name: Database setup
