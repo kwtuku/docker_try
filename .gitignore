@@ -5,41 +5,41 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-rails/src/.bundle
+src/.bundle
 
 # Ignore all logfiles and tempfiles.
-rails/src/log/*
-rails/src/tmp/*
-!rails/src/log/.keep
-!rails/src/tmp/.keep
+src/log/*
+src/tmp/*
+!src/log/.keep
+!src/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
-rails/src/tmp/pids/*
-!rails/src/tmp/pids/
-!rails/src/tmp/pids/.keep
+src/tmp/pids/*
+!src/tmp/pids/
+!src/tmp/pids/.keep
 
 # Ignore uploaded files in development.
-rails/src/storage/*
-!rails/src/storage/.keep
+src/storage/*
+!src/storage/.keep
 
-rails/src/public/assets
-rails/src/.byebug_history
+src/public/assets
+src/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-rails/src/config/master.key
+src/config/master.key
 
-rails/src/public/packs
-rails/src/public/packs-test
-rails/src/node_modules
-rails/src/yarn-error.log
-rails/src/yarn-debug.log*
-rails/src/.yarn-integrity
+src/public/packs
+src/public/packs-test
+src/node_modules
+src/yarn-error.log
+src/yarn-debug.log*
+src/.yarn-integrity
 
-rails/src/db/mysql_data/
+src/db/mysql_data/
 
-rails/src/public/packs
-rails/src/public/packs-test
-rails/src/node_modules
-rails/src/yarn-error.log
-rails/src/yarn-debug.log*
-rails/src/.yarn-integrity
+src/public/packs
+src/public/packs-test
+src/node_modules
+src/yarn-error.log
+src/yarn-debug.log*
+src/.yarn-integrity
