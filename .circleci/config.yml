@@ -12,8 +12,6 @@ jobs:
       - checkout:
           path: ~/docker_try
       - ruby/install-deps
-      - run: yarn install
-      - run: bundle exec bin/webpack
 
   test:
     docker:
@@ -36,6 +34,10 @@ jobs:
       - run:
           name: Database setup
           command: bundle exec rails db:migrate
+      - run:
+          name: yarn Install
+          command: yarn install
+      - run: bundle exec bin/webpack
       - run:
           name: test
           command: bundle exec rake test
